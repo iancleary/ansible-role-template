@@ -1,4 +1,4 @@
-ansible-role-zsh
+ansible-role-template
 =========
 
 <p align="center">
