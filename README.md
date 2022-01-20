@@ -57,9 +57,17 @@ Including an example of how to use your role (for instance, with variables passe
 
 ```yaml
 - hosts: servers
+  user: unprivelaged
   roles:
     - role: iancleary.template
-      variable: add_them_here
+      become: true
+```
+
+```yaml
+- hosts: servers
+  user: root
+  roles:
+    - role: iancleary.template
 ```
 
 License
